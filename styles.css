@@ -1,0 +1,51 @@
+body {
+    box-sizing: border-box;
+    background-color: #000 
+}
+.container {
+    width: 1024px;
+    margin: 100 auto;
+
+}
+.clock {
+    transform: scale(3);
+    border: 2px solid gray;
+    border-radius: 50%;
+    width:200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 350px;
+    position: relative;
+    box-shadow: 1px 1px 10px #FFF inset;
+    
+}
+.hours-hand, .mins-hand, .sec-hand {
+    width:90px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    -webkit-transition: cubic-bezier(0.5, 0.57, 0.3, 1.38);
+    transition: cubic-bezier(0.5, 0.57, 0.3, 1.38);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transform-origin: right;
+    box-shadow: -10px 1px 10px #FFF
+}
+
+.hours-hand {
+    width: 70px;
+    left: 30px;
+    background-color: black;
+}
+.mins-hand {
+    width: 80px;
+    left: 20px;
+    background-color: black;
+}
+.sec-hand {
+    width: 80px;
+    left: 20px;
+    background-color: black;
+}
